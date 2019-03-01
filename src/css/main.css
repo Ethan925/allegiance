@@ -1,9 +1,26 @@
 .header {
 	height: 100px;
-	background-color: red;
+	background-color: #33181e;
 	width: 100%;
 }
 
 .landing {
 	color: red;
+	display: flex;
+}
+
+.landing-img {
+	height: calc(100vh - 100px);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logo {
+	/*height: fit-content;*/
+	max-width: 100%;
 }

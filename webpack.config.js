@@ -21,14 +21,25 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css']
   },
   module: {
-    rules: [{
-      test: /\.jsx?$/,
-      loaders: ['babel-loader'],
-      include: path.join(__dirname, 'src')
-    },
-    {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader'],
-    }]
+    rules: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel-loader'],
+        include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ],
+      },
+    ]
   }
 };
