@@ -16,7 +16,7 @@ class StickyHeader extends Component {
       	<img
       		src={Logo}
       		style={{
-      			height: "60%"
+      			height: "150%"
       		}}
       	/>
       	<HeaderItems/>

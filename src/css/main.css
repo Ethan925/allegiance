@@ -4,20 +4,24 @@ body {
 }
 
 .header {
-	height: 60px;
+	height: 20px;
 	padding: 20px;
-	background-color: #33181e;
+	/*background-color: #33181e;*/
+	background-color: rgba(0,0,0,.2);
+	margin-bottom: -10px;
 	width: calc(100% - 40px);
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	position: absolute;
 }
 
 .sticky-header {
-	height: 60px;
+	z-index: 2;
+	height: 20px;
 	padding: 20px;
 	background-color: #33181e;
-	width: calc(100% - 56px);
+	width: calc(100% - 42px);
 	position: fixed;
 	top: 0;
 	transition: all .4s linear;
@@ -70,7 +74,8 @@ body {
 
 .gigs {
 	padding: 15px;
-	background: #000307;
+	background: black;
+	/*background: #000307;*/
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -117,4 +122,56 @@ body {
 	font-size: 28px;
 	font-weight: bold;
 	margin-bottom: -7px;
+}
+
+
+.about {
+	/*background-image: linear-gradient(black, yellow);*/
+	padding: 15px;
+	background: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.member {
+	max-width: 500px;
+	width: 100%;
+	/*height: 300px;*/
+	position: relative;
+	margin: 7.5px;
+}
+
+.member .picture img {
+	height: 150px;
+	position: absolute;
+	top: 15px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+
+.member .bio-wrapper {
+	background: #c9b483;
+	height: 180px;
+	margin-left: 15px;
+	border: 3px solid #37161e;
+}
+
+.bio {
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+.name {
+	font-size: 20px;
+}
+
+.description {
+}
+
+.social-links {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 }

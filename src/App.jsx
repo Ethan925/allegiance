@@ -4,6 +4,7 @@ import DevTools from 'mobx-react-devtools';
 import Landing from './Landing';
 import Header from './Header';
 import Gigs from './Gigs';
+import About from './About';
 import StickyHeader from './StickyHeader';
 import './css/main.css';
 
@@ -16,7 +17,7 @@ class App extends Component {
 
   hideBar = () => {
     const { showOpacity, renderStickyHeader } = this.state
-    if (window.scrollY > document.body.clientHeight) {
+    if (window.scrollY > (document.body.clientHeight * .6)) {
       !showOpacity && this.setState({ showOpacity: true });
     } else {
       showOpacity && this.setState({ showOpacity: false });
@@ -49,7 +50,7 @@ class App extends Component {
           this.state.renderStickyHeader && <StickyHeader show={this.state.showOpacity}/>
         }
         <Gigs/>
-
+        <About/>
         {/*<DevTools />*/}
       </div>
     );

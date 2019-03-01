@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import CrowdImg from './images/crowd.jpg'
-import Logo from './images/allegiance_logo_white.png'
+import CrowdImg from './images/crowd_fade_to_black.png';
+import Logo from './images/allegiance_logo_white.png';
 
 @observer
 class Landing extends Component {
