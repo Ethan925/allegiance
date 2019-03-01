@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 
 @observer
-class Landing extends Component {
+class Header extends Component {
   render() {
     return (
-      <div className="landing">
-        Allegiance
+      <div className="header">
+        header
       </div>
     );
   }
 };
 
-export default Landing;
+export default Header;
