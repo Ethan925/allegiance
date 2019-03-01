@@ -14,7 +14,9 @@ class Landing extends Component {
             backgroundImage: `url('${CrowdImg}')`
           }}
         >
-          <img className="logo" src={Logo}/>
+          <div className="logo-wrapper">
+            <img className="logo" src={Logo}/>
+          </div>
         </div>
       </div>
     );
