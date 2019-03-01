@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 import Landing from './Landing';
 import Header from './Header';
+import Gigs from './Gigs';
 import StickyHeader from './StickyHeader';
 import './css/main.css';
 
@@ -44,10 +45,11 @@ class App extends Component {
       <div>
         <Header/>
         <Landing/>
-        <div style={{height: 1000, background: 'red'}}></div>
         {
           this.state.renderStickyHeader && <StickyHeader show={this.state.showOpacity}/>
         }
+        <Gigs/>
+
         {/*<DevTools />*/}
       </div>
     );
