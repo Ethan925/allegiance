@@ -10,43 +10,43 @@ class About extends Component {
     const members = [
       {
         name: "Alexis Pinney",
-        instruments: ["vocals"],
+        instruments: ["fa-microphone"],
         picture: Alexis,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
       {
         name: "Ethan Long",
-        instruments: ["guitar"],
+        instruments: ["fa-guitar"],
         picture: Ethan,
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
       {
         name: "Alexis Pinney",
-        instruments: ["vocals"],
+        instruments: ["fa-microphone"],
         picture: Alexis,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
       {
         name: "Ethan Long",
-        instruments: ["guitar"],
+        instruments: ["fa-guitar"],
         picture: Ethan,
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
       {
         name: "Alexis Pinney",
-        instruments: ["vocals"],
+        instruments: ["fa-microphone"],
         picture: Alexis,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
       {
         name: "Ethan Long",
-        instruments: ["guitar"],
+        instruments: ["fa-guitar"],
         picture: Ethan,
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
       {
         name: "Alexis Pinney",
-        instruments: ["vocals"],
+        instruments: ["fa-microphone"],
         picture: Alexis,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
@@ -54,10 +54,19 @@ class About extends Component {
     return (
       <div className="about">
         {
-          _.map(members, (member) => {
+          _.map(members, (member, index) => {
             return (
-              <div className="member">
+              <div className="member" key={index}>
                 <div className="picture">
+                  <div className="instruments">
+                    {
+                      _.map(member.instruments, (instrument, index) => {
+                        return (
+                          <i key={index} className={`fa fa-fw ${instrument}`}></i>
+                        )
+                      })
+                    }
+                  </div>
                   <img src={member.picture}/>
                 </div>
                 <div className="bio-wrapper">

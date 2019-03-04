@@ -6,6 +6,8 @@ import Header from './Header';
 import Gigs from './Gigs';
 import About from './About';
 import StickyHeader from './StickyHeader';
+import Videos from './Videos';
+import Book from './Book';
 import './css/main.css';
 
 @observer
@@ -50,7 +52,9 @@ class App extends Component {
           this.state.renderStickyHeader && <StickyHeader show={this.state.showOpacity}/>
         }
         <Gigs/>
+        <Videos/>
         <About/>
+        <Book/>
         {/*<DevTools />*/}
       </div>
     );
