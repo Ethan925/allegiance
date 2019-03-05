@@ -11,7 +11,14 @@ class Book extends Component {
 
   render() {
     return (
-      <div className="book">
+      <div id="book">
+        <div style={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            width: 735
+          }}>
+          <h2 style={{marginBottom: 0}}>Booking</h2>
+        </div>
         <div className="form">
           <div className="input-wrapper">
             Name:

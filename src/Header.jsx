@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-      	<HeaderItems/>
+      	<HeaderItems ignoreScrollspy={true}/>
       </div>
     );
   }

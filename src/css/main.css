@@ -17,7 +17,7 @@ body {
 }
 
 .sticky-header {
-	z-index: 2;
+	z-index: 3;
 	height: 20px;
 	padding: 20px;
 	background-color: #33181e;
@@ -33,6 +33,7 @@ body {
 .landing {
 	color: red;
 	display: flex;
+	margin-bottom: -100px;
 }
 
 .landing-img {
@@ -57,23 +58,21 @@ body {
 	max-width: 100%;
 }
 
-.header-items {
-	display: flex;
-	cursor: pointer;
-}
-
 .header-item {
 	padding: 15px;
 	color: white;
 	transition: all .4s linear;
 }
 
-.header-item:hover {
+.header-item:hover,
+.header-item.is-current {
 	color: #c9b483;
 }
 
-.gigs {
+#gigs {
 	padding: 15px;
+	padding-top: 100px;
+	margin-bottom: -100px;
 	background: black;
 	/*background: #000307;*/
 	color: white;
@@ -125,9 +124,10 @@ body {
 }
 
 
-.about {
+#about {
 	/*background-image: linear-gradient(black, yellow);*/
 	padding: 15px;
+	padding-top: 100px;
 	background: black;
 	color: white;
 	display: flex;
@@ -203,7 +203,9 @@ body {
 	color: #33181e;
 }
 
-.video-wrapper {
+#video-wrapper {
+	padding-top: 100px;
+	margin-bottom: -50px;
 	background: black;
 	display: flex;
 	justify-content: center;
@@ -215,10 +217,11 @@ body {
 	max-height: 400px;
 }
 
-.book {
+#book {
 	background: gray;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .form {

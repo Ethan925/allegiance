@@ -52,7 +52,7 @@ class About extends Component {
       },
     ];
     return (
-      <div className="about">
+      <div id="about">
         {
           _.map(members, (member, index) => {
             return (

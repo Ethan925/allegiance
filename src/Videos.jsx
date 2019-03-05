@@ -5,7 +5,7 @@ import { observer } from 'mobx-react';
 class Videos extends Component {
   render() {
     return (
-      <div className="video-wrapper">
+      <div id="video-wrapper">
         <div className="video">
           <iframe
             width="100%"

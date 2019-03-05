@@ -88,7 +88,7 @@ class Gigs extends Component {
       },
     ];
     return (
-      <div className="gigs">
+      <div id="gigs">
         {
           _.map(gigs, (gig, index) => {
             return (
