@@ -4,11 +4,35 @@ import * as emailjs from 'emailjs-com';
 
 @observer
 class Book extends Component {
+  state = {
+    address: '',
+    email: ''
+  };
+
   render() {
     return (
       <div className="book">
         <div className="form">
-          form here
+          <div className="input-wrapper">
+            Name:
+            <input type="text" placeholder="Name..."/>
+          </div>
+          <div className="input-wrapper">
+            Email:
+            <input type="text" placeholder="Email..."/>
+          </div>
+          <div className="input-wrapper">
+            Message:
+            <textarea type="text" placeholder="Message..." height="300"/>
+          </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}>
+            <button>
+              Send
+            </button>
+          </div>
         </div>
       </div>
     );
