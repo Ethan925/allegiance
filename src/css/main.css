@@ -16,6 +16,7 @@ body {
 .header {
 	height: 20px;
 	padding: 20px;
+	z-index: 3;
 	/*background-color: #33181e;*/
 	background-color: rgba(0,0,0,.2);
 	margin-bottom: -10px;
@@ -30,7 +31,7 @@ body {
 	z-index: 3;
 	height: 20px;
 	padding: 20px;
-	background-color: #33181e;
+	background-color: rgba(0,0,0,0.85);
 	width: calc(100% - 42px);
 	position: fixed;
 	top: 0;
@@ -43,7 +44,21 @@ body {
 .landing {
 	color: red;
 	display: flex;
-	margin-bottom: -100px;
+	height: calc(100vh - 100px);
+	width: 100%;
+}
+
+.slide-container {
+	width: 100%;
+}
+
+.react-slideshow-container .nav:first-of-type {
+  position: absolute;
+  left: 15px;
+}
+
+.react-slideshow-container .nav:last-of-type {
+	margin-left: -45px;
 }
 
 .landing-img {
@@ -82,7 +97,7 @@ body {
 
 #gigs {
 	padding: 15px;
-	padding-top: 100px;
+	padding-top: 50px;
 	margin-bottom: -100px;
 	background: var(--primary-color);
 	/*background: #000307;*/

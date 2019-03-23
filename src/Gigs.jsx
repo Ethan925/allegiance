@@ -34,7 +34,7 @@ class Gigs extends Component {
         },
         where: "Mantua Potato Fest",
         link: "http://www.mantuapotatofestival.org/",
-        description: "Yaaass Queen"
+        description: "More Info to Come"
       },
       {
         date: {
