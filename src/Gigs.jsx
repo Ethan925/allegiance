@@ -9,82 +9,42 @@ class Gigs extends Component {
       {
         date: {
           number: "22",
-          month: "Apr",
-          time: "9pm - 12am",
-        },
-        where: "Chuggers",
-        link: "https://bing.com",
-        description: "Returning to Streetsboro for a night of dancing and music."
-      },
-      {
-        date: {
-          number: "01",
           month: "Jun",
           time: "6pm - 8pm",
         },
         where: "The Big Dog",
-        link: "https://bing.com",
-        description: "Performing for the Chamber of Commerce"
+        link: "https://www.facebook.com/BigDogSaloon/",
+        description: "More Info to Come"
       },
       {
         date: {
-          number: "22",
-          month: "Apr",
-          time: "9pm - 12am",
+          number: "23",
+          month: "Jul",
+          time: "6:30pm - 8:30pm",
         },
-        where: "Chuggers",
-        link: "https://bing.com",
-        description: "Returning to Streetsboro for a night of dancing and music."
+        where: "Summit County Fair",
+        link: "https://www.summitfair.com/",
+        description: "More Info to Come"
       },
       {
         date: {
-          number: "01",
-          month: "Jun",
-          time: "6pm - 8pm",
+          number: "07",
+          month: "Sep",
+          time: "2:30pm - 6pm",
         },
-        where: "The Big Dog",
-        link: "https://bing.com",
-        description: "Performing for the Chamber of Commerce"
+        where: "Mantua Potato Fest",
+        link: "http://www.mantuapotatofestival.org/",
+        description: "Yaaass Queen"
       },
       {
         date: {
-          number: "22",
-          month: "Apr",
-          time: "9pm - 12am",
+          number: "13",
+          month: "Sep",
+          time: "5pm - 7pm",
         },
-        where: "Chuggers",
-        link: "https://bing.com",
-        description: "Returning to Streetsboro for a night of dancing and music."
-      },
-      {
-        date: {
-          number: "01",
-          month: "Jun",
-          time: "6pm - 8pm",
-        },
-        where: "The Big Dog",
-        link: "https://bing.com",
-        description: "Performing for the Chamber of Commerce"
-      },
-      {
-        date: {
-          number: "22",
-          month: "Apr",
-          time: "9pm - 12am",
-        },
-        where: "Chuggers",
-        link: "https://bing.com",
-        description: "Returning to Streetsboro for a night of dancing and music."
-      },
-      {
-        date: {
-          number: "01",
-          month: "Jun",
-          time: "6pm - 8pm",
-        },
-        where: "The Big Dog",
-        link: "https://bing.com",
-        description: "Performing for the Chamber of Commerce"
+        where: "Brimfest",
+        link: "https://brimfieldohio.gov/event/brimfest/",
+        description: "More Info to Come"
       },
     ];
     return (

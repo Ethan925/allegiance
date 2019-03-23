@@ -3,6 +3,11 @@ import { observer } from 'mobx-react';
 import _ from 'lodash';
 import Alexis from './images/alexis.jpg';
 import Ethan from './images/ethan.jpg';
+import Alivia from './images/alivia.jpg';
+import Paul from './images/paul.jpg';
+import Nick from './images/nick.jpg';
+import Andy from './images/andy.jpg';
+import Evan from './images/evan.jpg';
 
 @observer
 class About extends Component {
@@ -15,15 +20,27 @@ class About extends Component {
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
       {
-        name: "Ethan Long",
-        instruments: ["fa-guitar"],
-        picture: Ethan,
+        name: "Alivia Pinney",
+        instruments: ["fa-microphone"],
+        picture: Alivia,
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
       {
-        name: "Alexis Pinney",
-        instruments: ["fa-microphone"],
-        picture: Alexis,
+        name: "Paul Olson",
+        instruments: ["fa-guitar"],
+        picture: Paul,
+        bio: "im a cunt.",
+      },
+      {
+        name: "Nick Luthy",
+        instruments: ["fa-guitar"],
+        picture: Nick,
+        bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
+      },
+      {
+        name: "Andy Tucker",
+        instruments: ["fa-guitar"],
+        picture: Andy,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
       {
@@ -33,21 +50,9 @@ class About extends Component {
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
       {
-        name: "Alexis Pinney",
-        instruments: ["fa-microphone"],
-        picture: Alexis,
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
-      },
-      {
-        name: "Ethan Long",
-        instruments: ["fa-guitar"],
-        picture: Ethan,
-        bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
-      },
-      {
-        name: "Alexis Pinney",
-        instruments: ["fa-microphone"],
-        picture: Alexis,
+        name: "Evan Blaha",
+        instruments: ["fa-guiar"],
+        picture: Evan,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
     ];

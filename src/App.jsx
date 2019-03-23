@@ -42,7 +42,7 @@ class App extends Component {
     window.removeEventListener('scroll', this.hideBar);
   }
 
-
+  // TODO google analytics
   render() {
     return (
       <div>

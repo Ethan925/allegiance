@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import CrowdImg from './images/crowd_fade_to_black.png';
+import CrowdImg from './images/cover_image.jpg';
 import Logo from './images/allegiance_logo_white.png';
 
 @observer
@@ -14,9 +14,9 @@ class Landing extends Component {
             backgroundImage: `url('${CrowdImg}')`
           }}
         >
-          <div className="logo-wrapper">
+          {/*<div className="logo-wrapper">
             <img className="logo" src={Logo}/>
-          </div>
+          </div>*/}
         </div>
       </div>
     );
