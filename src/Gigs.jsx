@@ -53,7 +53,7 @@ class Gigs extends Component {
           _.map(gigs, (gig, index) => {
             return (
               <div className="gig" key={index}>
-                <i className="fa fa-fw fa-calendar"></i>
+                <i className="fa fa-calendar"></i>
                 <div className="date">
                   <div className="number">{gig.date.number}</div>
                   <div>{gig.date.month}</div>

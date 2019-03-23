@@ -50,7 +50,8 @@ class Book extends Component {
         <div style={{
             display: 'flex',
             justifyContent: 'flex-start',
-            width: 735
+            maxWidth: 735,
+            width: "100%",
           }}>
           <h2 style={{marginBottom: 0}}>Booking and Questions</h2>
         </div>
