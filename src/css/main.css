@@ -321,15 +321,24 @@ body {
 .form button {
 	height: 40px;
 	min-width: 75px;
-	background-color: #33181e;
+	background-color: var(--secondary-color);
 	color: white;
-	border: 1px solid #33181e;
+	border: 1px solid var(--secondary-color);
 	cursor: pointer;
 	transition: all .2s linear;
 	font-size: 16px;
+	outline: none;
 }
 
 .form button:hover {
-	color: var(--accent-color);
+	/*color: var(--accent-color);*/
 	border: 1px solid var(--accent-color);
+}
+
+.toast-top-right {
+	top: 75px;
+}
+
+#toast-container > div {
+	opacity: 1;
 }
