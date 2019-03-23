@@ -35,7 +35,7 @@ class About extends Component {
         name: "Nick Luthy",
         instruments: ["fa-drum"],
         picture: Nick,
-        bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
+        bio: "Hey I'm nick I like drums. Diesel tech by day. I like drum slayin and wife layin. Also fuck off. Humble, with a side of whisky. Life is short so I’m smiling while I’ve still got all my teeth. Whenever I have a problem, I just sing, then I realize my voice is worse than my problem",
       },
       {
         name: "Andy Tucker",
