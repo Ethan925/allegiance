@@ -33,7 +33,7 @@ class About extends Component {
       },
       {
         name: "Nick Luthy",
-        instruments: ["fa-guitar"],
+        instruments: ["fa-drum"],
         picture: Nick,
         bio: "Aliquam pellentesque lorem quis nibh pellentesque, vitae sodales diam pharetra. Aenean hendrerit tortor at nisi elementum, ac dapibus neque tincidunt.",
       },
@@ -51,7 +51,7 @@ class About extends Component {
       },
       {
         name: "Evan Blaha",
-        instruments: ["fa-guiar"],
+        instruments: ["fa-guitar"],
         picture: Evan,
         bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum hendrerit quam eu vestibulum.",
       },
@@ -85,11 +85,13 @@ class About extends Component {
                   </div>
                 </div>
                 <div className="social-links">
-                  <i
-                    className="fab fa-lg fa-facebook"
-                    style={{marginRight: 5}}
-                  />
-                  <i className="fab fa-lg fa-instagram"/>
+                  {
+                      _.map(member.instruments, (instrument, index) => {
+                        return (
+                          <i key={index} className={`fa fa-fw ${instrument}`}></i>
+                        )
+                      })
+                    }
                 </div>
               </div>
             )

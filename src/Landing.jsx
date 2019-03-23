@@ -23,7 +23,7 @@ class Landing extends Component {
     return (
       <div className="landing">
         <Fade
-          duration={6000}
+          duration={9000}
           transitionDuration={500}
           infinite={true}
           indicators={true}
@@ -41,14 +41,9 @@ class Landing extends Component {
                   }}
                 >
                   <div
+                    className="slide-img"
                     style={{
-                      height: '100%',
-                      width: '100%',
-                      maxWidth: '970px',
                       backgroundImage: `url('${slide}')`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat',
                     }}
                   ></div>
                 </div>

@@ -8,18 +8,18 @@ class StickyHeader extends Component {
   render() {
     return (
       <div
-      	className="sticky-header"
-      	style={{
-      		opacity: this.props.show ? 1 : 0,
-      	}}
+        className="sticky-header"
+        style={{
+          opacity: this.props.show ? 1 : 0,
+        }}
       >
-      	<img
-      		src={Logo}
-      		style={{
-      			height: "150%"
-      		}}
-      	/>
-      	<HeaderItems/>
+        <img
+          src={Logo}
+          style={{
+            height: "150%"
+          }}
+        />
+        <HeaderItems/>
       </div>
     );
   }
